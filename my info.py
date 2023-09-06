@@ -5,3 +5,9 @@ Type "help", "copyright", "credits" or "license()" for more information.
 hi my name is varun sir ram muniganti
 i saty at ecil x roads, hyderabad,india 500062
 my contact number is 000000000
+>>> 
+== RESTART: C:/Users/varun/AppData/Local/Programs/Python/Python311/my info.py ==
+hi my name is varun sir ram muniganti
+i saty at ecil x roads, hyderabad,india 500062
+my contact number is 000000000
+my track is management in information systems
