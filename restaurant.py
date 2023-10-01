@@ -1,0 +1,40 @@
+#CS175
+#varun sri ram muniganti
+#restaurant
+
+
+Vegetarian = False
+Vegan = False
+Gluten_free = False
+
+choice1 = input("Is anyone in your party Vegetarian?")
+choice2 = input("Is anyone in your party Vegan?")
+choice3 = input("Is anyone in your party Gluten_free?")
+
+if choice1 == 'yes':
+    Vegetarian = True
+if choice2 == 'yes':
+    Vegan = True
+if choice3 == 'yes':
+    Gluten_free = True
+
+if Vegetarian == False and Vegan == False and Gluten_free == False:
+ print(" Joe's Gourment Burgers, Main Street Pizza Company, Corner Café, Mama's Fine Italian, The Chef’s Kitchen")
+elif Vegetarian == True and Vegan == False and Gluten_free == False:
+ print(" Main Street Pizza Company, Corner Café, Mama's Fine Italian, The Chef’s Kitchen")
+elif Vegetarian == False and Vegan == False and Gluten_free == True:
+ print(" Main Street Pizza Company, Corner Café, The Chef’s Kitchen")
+elif Vegetarian == True and Vegan == False and Gluten_free ==True:
+ print("Main Street Pizza Company, Corner Café, The Chef’s Kitchen")
+elif Vegetarian == False and Vegan == True and Gluten_free == False:
+ print("Corner Café, The Chef’s Kitchen")
+elif Vegetarian == False and Vegan == True and Gluten_free == True:
+ print("Corner Café, The Chef’s Kitchen")
+elif Vegetarian == True and Vegan == True and Gluten_free == False:
+ print("Corner Café, The Chef’s Kitchen")
+elif Vegetarian == True and Vegan == True and Gluten_free == True:
+ print("Corner Café, The Chef’s Kitchen")
+
+else:
+     print("sorry!")
+
