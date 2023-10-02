@@ -7,9 +7,9 @@ Vegetarian = False
 Vegan = False
 Gluten_free = False
 
-choice1 = input("Is anyone in your party Vegetarian?")
-choice2 = input("Is anyone in your party Vegan?")
-choice3 = input("Is anyone in your party Gluten_free?")
+choice1 = input("Is anyone in your party Vegetarian?").lower()
+choice2 = input("Is anyone in your party Vegan?").lower()
+choice3 = input("Is anyone in your party Gluten_free?").lower()
 
 if choice1 == 'yes':
     Vegetarian = True
