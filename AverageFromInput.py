@@ -1,11 +1,11 @@
 #CS 175L
 #Varun
-#AverageFromInput
+#Average From Input File with Exception Handling
 
 import sys
 
 def main():
-    
+    try:
         total = 0
         count = 0
         
@@ -21,6 +21,12 @@ def main():
         average = total / count
 
         print("Average:", average)
+        
+    except ValueError:
+        print('Non-numeric data found in the file.Skipping..')
+        
+    except IOError:
+        print('An error occurred trying to open the file.')
         
         sys.exit()
         average = total / count
