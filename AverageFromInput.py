@@ -1,35 +1,34 @@
 #CS 175L
-#Varun sri ram muniganti
+#Varun
 #AverageFromInput
 
+import sys
+
 def main():
-    x=0
-    total=0
-    try:
-        file=open('numbers.txt', 'r')
-        for y in file:
-            try:
-                x+=1
-                print('I read in',str(x), end=" ")
-                print(f'{"number(s)  Current number is:":<33}', float(y), end=" ")
-                print('Total is:   ', end=" ")
-                total+=float(y)
-                print(total)
-
-            except ValueError:
-                print('Non-numeric data found in the file.')
+    
+        total = 0
+        count = 0
+        
+        file = open("numbers.txt", "r")
+        
+        for line in file:
+            lines = float(line)
+            total += lines
+            count += 1
             
-        average=total/x
-        print('Average:', average)
+            print("I read in", count, "number(s) Current number is:", lines, "Total is:", total)
+            
+        average = total / count
 
-    except IOError:
-        print('An error occured trying to read in file.')
+        print("Average:", average)
+        
+        sys.exit()
+        average = total / count
+        
+        print("Average:", average)
+        sys.exit()
 
-    except:
-        print('An error occured.')
 
-if __name__=='__main__':
 
+if __name__ == '__main__':
     main()
-    
-    
